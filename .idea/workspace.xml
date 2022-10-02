@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="Backend commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonClasses/EmergencyServiceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CommonClasses/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireTruck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/TurntableLadderTruck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/MainGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/IncidentCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/IDispatchable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainGUI.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,6 +54,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664267825544</updated>
     </task>
+    <task id="LOCAL-00001" summary="Backend commit">
+      <created>1664747632553</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664747632553</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
