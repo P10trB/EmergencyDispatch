@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainGUI.java" afterDir="false" />
+    <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="Backend commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommonClasses/EmergencyServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CommonClasses/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireTruck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/FireUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/TurntableLadderTruck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/MainGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/IncidentCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Interfaces/IDispatchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainGUI.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,27 +55,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="EmergencyDispatchApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="EmergencyDispatchApp" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,10 +80,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Backend" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Backend commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend commit" />
   </component>
 </project>
