@@ -23,7 +23,6 @@ public class DispatchEngine{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            //TODO implement it
             boolean[] checkboxesStatus = new boolean[3];
             for (int i = 0; i < checkboxesStatus.length; i++) {
                 checkboxesStatus[i] = mainGUI.getCheckboxStatus(i);

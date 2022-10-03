@@ -5,7 +5,7 @@ import CommonClasses.Strings;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TurntableLadderTruck extends FireUnit{
+public class MockTurntableLadderTruck extends MockFireUnit {
     private final double LADDER_MAX_LENGTH = 500.0;
     private final double LADDER_MIN_LENGTH = 0.0;
     private final int LADDER_MAX_DEGREES_ROTATION = 359;
@@ -13,17 +13,17 @@ public class TurntableLadderTruck extends FireUnit{
     private double ladderLength;
     private int ladderRotation;
 
-    TurntableLadderTruck(double ladderLength) {
+    MockTurntableLadderTruck(double ladderLength) {
         super(Strings.TURNTABLE_LADDER_TRUCK, State.READY, new ArrayList<>());
         this.ladderLength = ladderLength;
         this.ladderRotation = LADDER_MIN_DEGREES_ROTATION;
     }
 
-    TurntableLadderTruck(){
+    MockTurntableLadderTruck(){
        this(0);
     }
 
-    TurntableLadderTruck(String name, State state, List<String> tools, double ladderLength, int ladderRotation) {
+    MockTurntableLadderTruck(String name, State state, List<String> tools, double ladderLength, int ladderRotation) {
         super(name, state, tools);
         this.ladderLength = ladderLength;
         this.ladderRotation = ladderRotation;

@@ -4,12 +4,12 @@ import CommonClasses.Strings;
 
 import java.util.ArrayList;
 
-public class FireTruck extends FireUnit{
+public class MockFireTruck extends MockFireUnit {
     private final int MAX_CREW_CAPACITY = 10;
     private  final int INITIAL_CREW = 0;
     private int currentCrewOnBoard;
 
-    FireTruck(){
+    MockFireTruck(){
         super(Strings.FIRE_TRUCK, State.READY, new ArrayList<>());
         this.currentCrewOnBoard = INITIAL_CREW;
     }

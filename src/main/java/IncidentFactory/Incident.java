@@ -8,8 +8,7 @@ public class Incident{
     private final int MINIMUM_ASSISTANCE = 0;
     private final int MAXIMUM_ASSISTANCE = 7;
     Random random = new Random();
-    private final static String[] NAMES = {"Forrest fire", "Building fire", "Cat on a tree", "Suicidal attempt", "Bank robbery", "Car accident",
-                                    ""};
+    private final static String[] NAMES = {"Forrest fire", "Building fire", "Cat on a tree", "Suicidal attempt", "Bank robbery", "Car accident"};
     @Getter String incidentName;
     boolean[] assumedAssistanceNeeded = new boolean[3];
     @Getter Location incidentLocation;

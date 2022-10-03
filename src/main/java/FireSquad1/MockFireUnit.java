@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-class FireUnit {
+class MockFireUnit {
 
     @Getter @Setter
     State state;
@@ -16,12 +16,12 @@ class FireUnit {
     protected enum State{
         READY, BROKEN, ON_DISPATCH, BEING_REPAIRED, BEING_CLEANED, RETURNING_TO_BASE;
     }
-    FireUnit(){
+    MockFireUnit(){
         name = "Fire unit";
         state = State.READY;
         tools = new ArrayList<>();
     }
-    FireUnit(String name, State state, List<String> tools){
+    MockFireUnit(String name, State state, List<String> tools){
         this.name = name;
         this.state = state;
         this.tools = tools;

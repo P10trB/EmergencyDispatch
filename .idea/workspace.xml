@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="Backend commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PoliceDepartament/MockPoliceForces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PoliceDepartament/MockSWATVan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PoliceDepartament/MockSquadCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PoliceDepartament/MockSquadVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FireSquad1/FireDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/MockFireDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FireSquad1/FireEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/MockFireEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FireSquad1/FireTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/MockFireTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FireSquad1/FireUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/MockFireUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FireSquad1/TurntableLadderTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FireSquad1/MockTurntableLadderTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
