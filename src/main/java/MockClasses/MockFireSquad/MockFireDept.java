@@ -5,22 +5,17 @@ import java.util.List;
 
 import CommonClasses.EmergencyServiceType;
 import Interfaces.IDispatchable;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
+@AllArgsConstructor @NoArgsConstructor @RequiredArgsConstructor
 public class MockFireDept implements IDispatchable {
     private int firemen;
     private final EmergencyServiceType emergencyServiceType = EmergencyServiceType.FIREFIGHTERS;
 
     private List<MockFireUnit> mockFireUnits;
 
-    MockFireDept(){
-        this(20);
-    }
-
-    MockFireDept(int firemen) {
-        this.firemen = firemen;
-        this.mockFireUnits = new ArrayList<>();
-        buyBrandNewVehicles();
-    }
     private void buyBrandNewVehicles(){
         mockFireUnits.add(new MockFireEngine());
         mockFireUnits.add(new MockFireEngine(1000));
