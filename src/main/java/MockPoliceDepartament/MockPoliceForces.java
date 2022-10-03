@@ -1,4 +1,4 @@
-package PoliceDepartament;
+package MockPoliceDepartament;
 
 import CommonClasses.EmergencyServiceType;
 import Interfaces.IDispatchable;

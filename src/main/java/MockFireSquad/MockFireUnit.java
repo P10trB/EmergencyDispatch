@@ -1,4 +1,4 @@
-package FireSquad1;
+package MockFireSquad;
 
 import lombok.Getter;
 import lombok.Setter;

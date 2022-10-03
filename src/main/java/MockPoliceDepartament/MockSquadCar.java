@@ -1,4 +1,4 @@
-package PoliceDepartament;
+package MockPoliceDepartament;
 
 import lombok.*;
 

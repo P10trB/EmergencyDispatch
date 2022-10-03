@@ -1,4 +1,4 @@
-package FireSquad1;
+package MockFireSquad;
 
 import CommonClasses.Strings;
 

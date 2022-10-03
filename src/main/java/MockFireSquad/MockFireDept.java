@@ -1,4 +1,4 @@
-package FireSquad1;
+package MockFireSquad;
 
 import java.util.ArrayList;
 import java.util.List;
