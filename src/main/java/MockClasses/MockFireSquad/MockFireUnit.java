@@ -1,4 +1,4 @@
-package MockFireSquad;
+package MockClasses.MockFireSquad;
 
 import lombok.Getter;
 import lombok.Setter;

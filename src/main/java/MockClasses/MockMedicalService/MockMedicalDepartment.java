@@ -1,4 +1,4 @@
-package MockMedicalService;
+package MockClasses.MockMedicalService;
 
 import CommonClasses.EmergencyServiceType;
 import Interfaces.IDispatchable;

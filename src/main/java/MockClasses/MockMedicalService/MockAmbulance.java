@@ -1,4 +1,4 @@
-package MockMedicalService;
+package MockClasses.MockMedicalService;
 
 import lombok.Getter;
 import lombok.Setter;

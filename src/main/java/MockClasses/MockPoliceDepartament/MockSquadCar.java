@@ -1,4 +1,4 @@
-package MockPoliceDepartament;
+package MockClasses.MockPoliceDepartament;
 
 import lombok.*;
 
