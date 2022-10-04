@@ -9,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor @NoArgsConstructor @RequiredArgsConstructor
+@AllArgsConstructor @NoArgsConstructor
 public class MockPoliceForces implements IDispatchable {
     EmergencyServiceType emergencyServiceType = EmergencyServiceType.POLICE;
     MockSquadVehicle[] vehicles = {new MockSquadCar("Squad Car"), new MockSWATVan("SWAT Van"), new MockSquadCar("Squad Car"), new MockSquadCar("Squad Car")};

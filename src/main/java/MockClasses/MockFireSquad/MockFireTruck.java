@@ -1,16 +1,16 @@
 package MockClasses.MockFireSquad;
 
-import CommonClasses.Strings;
+import CommonClasses.MessageValuesForGui;
 
 import java.util.ArrayList;
 
 public class MockFireTruck extends MockFireUnit {
-    private final int MAX_CREW_CAPACITY = 10;
-    private  final int INITIAL_CREW = 0;
+    private final static int MAX_CREW_CAPACITY = 10;
+    private  final static int INITIAL_CREW = 0;
     private int currentCrewOnBoard;
 
     MockFireTruck(){
-        super(Strings.FIRE_TRUCK, State.READY, new ArrayList<>());
+        super(MessageValuesForGui.FIRE_TRUCK, State.READY, new ArrayList<>());
         this.currentCrewOnBoard = INITIAL_CREW;
     }
     int boardCrew(int crewMembers){
@@ -23,6 +23,6 @@ public class MockFireTruck extends MockFireUnit {
             currentCrewOnBoard = MAX_CREW_CAPACITY;
             return crewMembers - MAX_CREW_CAPACITY; //return crew members that didn't fit
         }
-        return 0;       //All crewmen have been sent, so no one left to return to base
+        return INITIAL_CREW;       //All crewmen have been sent, so no one left to return to base
     }
 }

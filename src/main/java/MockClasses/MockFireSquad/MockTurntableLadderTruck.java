@@ -1,6 +1,6 @@
 package MockClasses.MockFireSquad;
 
-import CommonClasses.Strings;
+import CommonClasses.MessageValuesForGui;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,7 @@ public class MockTurntableLadderTruck extends MockFireUnit {
     private int ladderRotation;
 
     MockTurntableLadderTruck(double ladderLength) {
-        super(Strings.TURNTABLE_LADDER_TRUCK, State.READY, new ArrayList<>());
+        super(MessageValuesForGui.TURNTABLE_LADDER_TRUCK, State.READY, new ArrayList<>());
         this.ladderLength = ladderLength;
         this.ladderRotation = LADDER_MIN_DEGREES_ROTATION;
     }

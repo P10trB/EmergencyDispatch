@@ -23,35 +23,20 @@ public class DispatchEngine{
 
     final static List<IDispatchable> dispatchableServices = new ArrayList<>(Arrays.asList(new MockFireDept(), new MockMedicalDepartment(), new MockPoliceForces()));
     static MainGUI mainGUI = new MainGUI();
-    public static class RequestDispatchListener implements ActionListener{
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            boolean[] checkboxesStatus = new boolean[3];
-            for (int i = 0; i < checkboxesStatus.length; i++) {
-                checkboxesStatus[i] = mainGUI.getCheckboxStatus(i);
-            }
-            for(IDispatchable dispatchable : dispatchableServices){
-                requestDispatch(checkboxesStatus, dispatchable);    //send proper type of services
-            }
-        }
-    }
-
-    private static void requestDispatch(boolean[] checkboxesStatus, IDispatchable dispatchable) {
-        if(dispatchable.getType().equals(EmergencyServiceType.FIREFIGHTERS) && checkboxesStatus[0]){
+    static void requestDispatch(boolean[] checkboxesStatus, IDispatchable dispatchable) {
+        if((EmergencyServiceType.FIREFIGHTERS).equals(dispatchable.getType()) && checkboxesStatus[0]){
             dispatchable.dispatchUnits(mainGUI.getCurrentlySelectedIncident());
         }
-        if(dispatchable.getType().equals(EmergencyServiceType.MEDICAL) && checkboxesStatus[1]){
+        if((EmergencyServiceType.FIREFIGHTERS).equals(dispatchable.getType()) && checkboxesStatus[1]){
             dispatchable.dispatchUnits(mainGUI.getCurrentlySelectedIncident());
         }
-        if(dispatchable.getType().equals(EmergencyServiceType.POLICE) && checkboxesStatus[2]){
+        if((EmergencyServiceType.FIREFIGHTERS).equals(dispatchable.getType()) && checkboxesStatus[2]){
             dispatchable.dispatchUnits(mainGUI.getCurrentlySelectedIncident());
         }
     }
 
-
-    public void Start(){
+    public void start(){
         incidentList = incidentCreatorEngine.populateIncidentList();
         mainGUI.makeGUI(incidentList);
     }
