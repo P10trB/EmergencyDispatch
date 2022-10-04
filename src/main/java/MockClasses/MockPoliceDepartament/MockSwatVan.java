@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor @AllArgsConstructor
-public class MockSWATVan extends MockSquadVehicle{
-    MockSWATVan(String name){
+public class MockSwatVan extends MockSquadVehicle{
+    MockSwatVan(String name){
         super.setName(name);
     }
     @Getter @Setter

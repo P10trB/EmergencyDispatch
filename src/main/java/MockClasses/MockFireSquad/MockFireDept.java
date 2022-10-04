@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor @NoArgsConstructor
 public class MockFireDept implements IDispatchable {
     private final static int DEFAULT_CREW_NUMBER = 7;
-    private int firemen;
     private final EmergencyServiceType emergencyServiceType = EmergencyServiceType.FIREFIGHTERS;
 
     private List<MockFireUnit> mockFireUnits = List.of(new MockFireEngine(), new MockFireEngine(1000),

@@ -3,15 +3,13 @@ import lombok.Getter;
 
 import java.util.Random;
 public class Incident{
-    private final int MINIMUM_ASSISTANCE = 0;
-    private final int MAXIMUM_ASSISTANCE = 7;
-    Random random = new Random();
     private final static String[] NAMES = {"Forrest fire", "Building fire", "Cat on a tree", "Suicidal attempt", "Bank robbery", "Car accident"};
     @Getter private final String incidentName;
     @Getter private final Location incidentLocation;
     @Getter private final Integer incidentHazardLevel;
 
     Incident(int x, int y){
+        Random random = new Random();
         incidentName = NAMES[random.nextInt(NAMES.length)];
         incidentLocation = new Location(x, y);
         incidentHazardLevel = random.nextInt(8) + 1;

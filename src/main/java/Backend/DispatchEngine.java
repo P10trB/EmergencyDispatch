@@ -10,8 +10,6 @@ import MockClasses.MockMedicalService.MockMedicalDepartment;
 import MockClasses.MockPoliceDepartament.MockPoliceForces;
 import lombok.Getter;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -37,7 +35,7 @@ public class DispatchEngine{
     }
 
     public void start(){
-        incidentList = incidentCreatorEngine.populateIncidentList();
+        incidentList = incidentCreatorEngine.createIncidentList();
         mainGUI.makeGUI(incidentList);
     }
 

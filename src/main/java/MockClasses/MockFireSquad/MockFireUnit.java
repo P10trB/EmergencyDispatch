@@ -1,11 +1,14 @@
 package MockClasses.MockFireSquad;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 class MockFireUnit {
 
     @Getter @Setter
@@ -16,11 +19,6 @@ class MockFireUnit {
     protected enum State{
         READY, BROKEN, ON_DISPATCH, BEING_REPAIRED, BEING_CLEANED, RETURNING_TO_BASE;
     }
-    MockFireUnit(){
-        name = "Fire unit";
-        state = State.READY;
-        tools = new ArrayList<>();
-    }
     MockFireUnit(String name, State state, List<String> tools){
         this.name = name;
         this.state = state;
@@ -28,7 +26,8 @@ class MockFireUnit {
     }
     void go(){
         state = State.ON_DISPATCH;
-        System.out.println("Yes sir!");
+        //log.info("Yes sir!");
+        System.out.println(("Yes sir!"));
     }
 
     //more methods fire unit specific should be below

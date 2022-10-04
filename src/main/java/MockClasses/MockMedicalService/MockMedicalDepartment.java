@@ -10,12 +10,13 @@ import java.util.Arrays;
 import java.util.List;
 @AllArgsConstructor @NoArgsConstructor
 public class MockMedicalDepartment implements IDispatchable {
+    private static final List<String> excludedIncidents = Arrays.asList("Forrest fire", "Cat on a tree"); //Zmiana kosmetyczna
     List<MockAmbulance> mockAmbulanceList = Arrays.asList(new MockAmbulance("R"), new MockAmbulance("S"), new MockAmbulance("L"));
     EmergencyServiceType emergencyServiceType = EmergencyServiceType.MEDICAL;
     @Override
     public List<String> dispatchUnits(String incident) {
         List<String> unitsToBeSent = new ArrayList<>();
-        if(!incident.equals("Forrest fire") && !incident.equals("Cat on a tree")){
+        if(!excludedIncidents.contains(incident)){      //Myślę, że tak wygląda dużo lepiej niż wcześniej.
             for (MockAmbulance ambulance : mockAmbulanceList){
                 if(ambulance.isCanBeDispatched()){
                     unitsToBeSent.add(ambulance.toString());
