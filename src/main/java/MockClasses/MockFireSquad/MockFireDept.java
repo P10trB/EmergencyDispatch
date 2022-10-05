@@ -7,61 +7,52 @@ import CommonClasses.EmergencyServiceType;
 import Interfaces.IDispatchable;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
-@AllArgsConstructor @NoArgsConstructor @RequiredArgsConstructor
+@AllArgsConstructor @NoArgsConstructor
 public class MockFireDept implements IDispatchable {
-    private int firemen;
+    private final static int DEFAULT_CREW_NUMBER = 7;
     private final EmergencyServiceType emergencyServiceType = EmergencyServiceType.FIREFIGHTERS;
 
-    private List<MockFireUnit> mockFireUnits;
+    private List<MockFireUnit> mockFireUnits = List.of(new MockFireEngine(), new MockFireEngine(1000),
+            new MockFireTruck(), new MockFireTruck(), new MockTurntableLadderTruck());
 
-    private void buyBrandNewVehicles(){
-        mockFireUnits.add(new MockFireEngine());
-        mockFireUnits.add(new MockFireEngine(1000));
-        mockFireUnits.add(new MockFireTruck());
-        mockFireUnits.add(new MockFireTruck());
-        mockFireUnits.add(new MockTurntableLadderTruck());
-        mockFireUnits.add(new MockTurntableLadderTruck(700.0));
-
-    }
     @Override
     public List<String> dispatchUnits(String incident) {
-        //TODO return real list
         List<MockFireUnit> unitsToBeDispatched = new ArrayList<>();
         List<String> sentUnitsList = new ArrayList<>();
-        for(MockFireUnit unit : mockFireUnits){
-            if(unit.getState().equals(MockFireUnit.State.READY)){   //only send units ready to be dispatched
-                if(incident.contains("fire")){
-                    if(unit.getClass().equals(MockFireEngine.class)){
-                        unitsToBeDispatched.add(unit);
-                        unit.go();
-                    }
-                    if(unit.getClass().equals(MockFireTruck.class)){
-                        unitsToBeDispatched.add(unit);
-                        ((MockFireTruck) unit).boardCrew(7);
-                        unit.go();
-                    }
-                }
-                else if(incident.equals("Car accident") && unit.getClass().equals(MockFireTruck.class)){
-                    unitsToBeDispatched.add(unit);
-                    ((MockFireTruck) unit).boardCrew(7);
-                    unit.go();
-                }
-                else if(incident.startsWith("Cat") && unit.getClass().equals(MockTurntableLadderTruck.class)){
-                    unitsToBeDispatched.add(unit);
-                    unit.go();
-                }
-            }
-        }
-        for(MockFireUnit unit : unitsToBeDispatched){
+        fireDeptInternalDispatchSystem(incident, unitsToBeDispatched);
+        for (MockFireUnit unit : unitsToBeDispatched) {
             sentUnitsList.add(unit.getName());
         }
         return sentUnitsList;
     }
 
+    private void fireDeptInternalDispatchSystem(String incident, List<MockFireUnit> unitsToBeDispatched) {
+        for (MockFireUnit unit : mockFireUnits) {
+            if (MockFireUnit.State.READY.equals(unit.getState())) {   //only send units ready to be dispatched
+                if ((incident.contains("fire")) || (incident.equals("Car accident")) &&
+                        (unit.getClass().equals(MockFireEngine.class) || (unit.getClass().equals(MockFireTruck.class)))) {
+                    sendUnits(unitsToBeDispatched, unit);
+                } else if (incident.startsWith("Cat") && unit.getClass().equals(MockTurntableLadderTruck.class)) {
+                    sendUnits(unitsToBeDispatched, unit);
+                }
+            }
+        }
+    }
+
+
+
+
+    private static void sendUnits(List<MockFireUnit> unitsToBeDispatched, MockFireUnit unit) {
+        if(unit.getClass().equals(MockFireTruck.class)) {
+            ((MockFireTruck) unit).boardCrew(DEFAULT_CREW_NUMBER);
+        }
+        unitsToBeDispatched.add(unit);
+        unit.go();
+    }
+
     @Override
     public EmergencyServiceType getType() {
-        return null;
+        return emergencyServiceType;
     }
 }

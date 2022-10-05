@@ -1,18 +1,14 @@
 package IncidentFactory;
 
 class Location {
-    int x;
-    int y;
+    private final int X;
+    private final int Y;
     Location(int x, int y){
-        this.x = x;
-        this.y = y;
+        this.X = x;
+        this.Y = y;
     }
-    Location(){
-        this(10,15);
-    }
-
     @Override
     public String toString() {
-        return x + ", " + y;
+        return X + ", " + Y;
     }
 }

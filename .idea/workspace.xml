@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="Mock Classes moved to their own package">
+    <list default="true" id="c22de7e0-aa88-46d6-ae5d-4daa1c747e7e" name="Changes" comment="Clearing up the code work in progress...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Backend/DispatchEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Incident.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IncidentFactory/IncidentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/IncidentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IncidentFactory/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncidentFactory/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockFireDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockFireDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockFireUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockFireUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockTurntableLadderTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockFireSquad/MockTurntableLadderTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockMedicalService/MockAmbulance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockMedicalService/MockAmbulance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockMedicalService/MockMedicalDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockMedicalService/MockMedicalDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockPoliceDepartament/MockPoliceForces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockPoliceDepartament/MockPoliceForces.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MockClasses/MockPoliceDepartament/MockSWATVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MockClasses/MockPoliceDepartament/MockSwatVan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664786963272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Clearing up the code work in progress...">
+      <created>1664910117461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664910117461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +132,7 @@
     <MESSAGE value="Mock Police Forces complete" />
     <MESSAGE value="Mock Medical Forces complete" />
     <MESSAGE value="Mock Classes moved to their own package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mock Classes moved to their own package" />
+    <MESSAGE value="Clearing up the code work in progress..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clearing up the code work in progress..." />
   </component>
 </project>

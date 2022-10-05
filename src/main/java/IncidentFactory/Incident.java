@@ -1,34 +1,36 @@
 package IncidentFactory;
 import lombok.Getter;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.Random;
 public class Incident{
-    private final int MINIMUM_ASSISTANCE = 0;
-    private final int MAXIMUM_ASSISTANCE = 7;
-    Random random = new Random();
     private final static String[] NAMES = {"Forrest fire", "Building fire", "Cat on a tree", "Suicidal attempt", "Bank robbery", "Car accident"};
-    @Getter String incidentName;
-    boolean[] assumedAssistanceNeeded = new boolean[3];
-    @Getter Location incidentLocation;
-    @Getter Integer incidentHazardLevel;
-    Incident(){
-        this(15, 23);
-    }
+    @Getter private final String incidentName;
+    @Getter private final Location incidentLocation;
+    @Getter private final Integer incidentHazardLevel;
+
     Incident(int x, int y){
+        Random random = new Random();
         incidentName = NAMES[random.nextInt(NAMES.length)];
-        for(boolean assistanceNeeded : assumedAssistanceNeeded){
-            assistanceNeeded = random.nextBoolean();
-        }
         incidentLocation = new Location(x, y);
-        incidentHazardLevel = random.nextInt(9);
+        incidentHazardLevel = random.nextInt(8) + 1;
     }
 
+    public String getIncidentDescription(){
+        StringBuilder builder = new StringBuilder();
+        builder.append("CAUTION!\n");
+        builder.append("Incident: ");
+        builder.append(incidentName);
+        builder.append(".\n");
+        builder.append("Location coordinates of where it happened: ");
+        builder.append(incidentLocation.toString());
+        builder.append(".\n Incident hazard level is: ");
+        builder.append(incidentHazardLevel);
+        builder.append(".");
+        return builder.toString();
+    }
     @Override
     public String toString() {
         return "Incident " + incidentName + '\'' +
-                ", location: " + incidentLocation +
                 ", hazard level: " + incidentHazardLevel;
     }
 }

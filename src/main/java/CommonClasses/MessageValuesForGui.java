@@ -1,6 +1,6 @@
 package CommonClasses;
 
-public class Strings {
+public class MessageValuesForGui {
     public static final String APP_NAME = "Emergency Dispatch";
     public static final String REQUEST_DISPATCH = "Request Dispatch";
     public static final String PENDING_INCIDENTS = "Pending incidents: ";

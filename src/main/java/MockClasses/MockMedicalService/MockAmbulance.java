@@ -6,9 +6,9 @@ import lombok.Setter;
 import java.util.Random;
 
 public class MockAmbulance {
-    private Random random = new Random();
     public MockAmbulance(String name){
         this.name = name;
+        Random random = new Random();
         canBeDispatched = random.nextBoolean();
     }
     @Getter
